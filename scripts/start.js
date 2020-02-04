@@ -4,6 +4,11 @@
 process.env.BABEL_ENV = 'development';
 process.env.NODE_ENV = 'development';
 
+// 开发环境 要在IE下能正常打开
+if (process.argv[2] === "ie") {
+  process.env.IE = true;
+}
+
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
 // terminate the Node.js process with a non-zero exit code.
