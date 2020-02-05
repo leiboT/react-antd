@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 import { Button } from "antd";
 import "./index.less";
 import styles from "./index.module.less";
+import Decorator from "./Decorator";
 
 const Test = ({ theme }) => (
   <React.Fragment>
     <p className="test">normal</p>
     <p className={styles.test}>css module</p>
     <Button type={theme}>test</Button>
+    <Decorator />
   </React.Fragment>
 );
 

@@ -395,6 +395,7 @@ module.exports = function(webpackEnv) {
                       }
                     }
                   ],
+                  ["@babel/plugin-proposal-decorators", { legacy: true }],
                   [
                     "import",
                     {
